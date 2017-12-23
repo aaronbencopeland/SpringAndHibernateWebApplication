@@ -5,12 +5,12 @@ import com.copeland.model.Contact;
 
 public interface ContactService {
 	
-    public void addContact(Contact contact);
+  public void addContact(Contact contact);
     
-    public List<Contact> getAllContacts();
+  public List<Contact> getAllContacts();
  
-    public void deleteContact(Integer contactId);
+  public void deleteContact(Integer contactId);
  
-    public Contact getContact(int contactId);
+  public Contact getContact(int contactId);
  
 }

@@ -2,16 +2,9 @@ package com.copeland.controller;
 
 import java.io.IOException;
 import java.util.List;
-
 import javax.servlet.http.HttpServletRequest;
-
-
-
-
 import org.jboss.logging.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.context.annotation.ComponentScan;
-import org.springframework.context.annotation.Configuration;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -21,8 +14,6 @@ import org.springframework.web.servlet.ModelAndView;
 import com.copeland.model.Contact;
 import com.copeland.service.ContactService;
 
-//@Configuration
-//@ComponentScan("com.copeland.service")
 @Controller
 public class ContactController {
 
@@ -66,7 +57,7 @@ public class ContactController {
 	return new ModelAndView("redirect:/");
   }
 	 
-  @RequestMapping(value = "/editContact", method = RequestMethod.GET)
+  /*@RequestMapping(value = "/editContact", method = RequestMethod.GET)
   public ModelAndView editContact(HttpServletRequest request) {
 	int contactId = Integer.parseInt(request.getParameter("id"));
 	Contact contact = contactService.getContact(contactId);
@@ -74,5 +65,5 @@ public class ContactController {
 	model.addObject("contact", contact);
 	 
 	return model;
-  }
+  }*/
 }
